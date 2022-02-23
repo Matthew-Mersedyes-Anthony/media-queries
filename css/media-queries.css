@@ -24,15 +24,20 @@ body {
 
 .nav-links {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
-    justify-content: flex-end;
     list-style: none;
 }
-
+li {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    border: 2px solid red;
+    padding: .8em;
+    margin: 12px 0px 12px 0px;
+}
 .header-img {
     display: flex;
-
 }
 
 img {
@@ -45,8 +50,6 @@ img {
     display: flex;
     flex-direction: column;
 }
-
-
 
 h1 {
     display: flex;
@@ -69,13 +72,6 @@ h2 {
     display: flex;
 }
 
-li {
-    display: flex;
-    background-color: black;
-    border: 2px solid red;
-    padding: .8em;
-    margin: 12px 0px 12px 0px;
-}
 
 li a:hover{
     color: aqua;
@@ -86,4 +82,91 @@ li a:hover{
 
 footer {
     margin-top: 5em;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width:992px) {
+    body {
+        font-family: sans-serif;
+        font-weight: bolder;
+        background-color: red;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .hidden-on-desktop{
+
+    }
+    .alert-info {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        text-decoration: underline;
+
+    }
+    li {
+        display: flex;
+        background-color: red;
+        border: none;
+        padding: .8em;
+        margin: 12px 0px 12px 0px;
+    }
+    li a:hover{
+        color: aqua;
+    }
+    a {
+        color: black;
+    }
+
+    .header-img {
+        display: flex;
+
+    }
+
+    img {
+        height: 500px;
+        width: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    #social-media-links {
+
+    }
+
+    h2 {
+        display: flex;
+    }
+
+    .alert-info a:hover{
+        color: aqua;
+    }
+
+    footer {
+        margin-top: 5em;
+    }
 }
