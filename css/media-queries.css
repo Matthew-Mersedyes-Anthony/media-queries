@@ -2,7 +2,7 @@
         font-family: sans-serif;
         font-weight: bolder;
         background-color: black;
-        color: white;
+        color: antiquewhite;
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -13,13 +13,13 @@
         display: flex;
         justify-content: center;
         background-color: black;
-        border: 2px solid red;
+        border: 2px solid blue;
         padding: .8em;
     }
 
     .alert-info a {
         text-decoration: none;
-        color: white;
+        color: antiquewhite;
         letter-spacing: 1px;
         font-size: 12px;
     }
@@ -34,11 +34,12 @@
 
     li {
         display: flex;
-        background-color: white;
+        background-color: antiquewhite;
         justify-content: center;
-        border: 2px solid red;
+        border: 2px solid black;
         padding: .8em;
         margin: 12px 0;
+        opacity: .70;
     }
 
     img {
@@ -83,7 +84,7 @@
         font-family: sans-serif;
         font-weight: bolder;
         background-color: black;
-        color: white;
+        color: antiquewhite;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
