@@ -147,11 +147,12 @@
         justify-content: flex-end;
     }
     .main {
-        width: 50%
+        width: 60%
     }
     .sub-section {
-        width: 50%;
+        width: 40%;
         margin-top:0;
+        font-style: italic;
     }
 
     #social-media-links {
